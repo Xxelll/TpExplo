@@ -2,24 +2,26 @@
 #include <string.h>
 #include <stdlib.h>
 
+int main()
+{
+    char reponse[50];
+    char toulouse[50] = ("toulouse");
+    char montpellier[50] = ("montpellier");
 
+    printf("Voulez vous allez a montpellier ou toulouse ?\n");
 
-int main(){
+    scanf("%s", reponse);
 
-  int decisionJoueur = 0;
+  if (strcmp(reponse,montpellier)==0){
+    printf("Vous allez a montpellier");
+  }
 
-  printf ("Ou voulez vous aller ?\n (1) Toulouse (2) Montpellier.\n");
-  		scanf("%d",&decisionJoueur);
+  if (strcmp(reponse,toulouse)==0){
+    printf("Vous allez a toulouse");
+}
+  if (strcmp(reponse,toulouse)!=0){
+  printf("Error");
+}
 
-// Decision du lieu par numéro
-  if(decisionJoueur == 1){
-			printf("\nVous allez a Toulouse \n");
-        }
-
-		if (decisionJoueur == 2){
-			printf("Vous allez a Montpellier\n");
-		}
-
-return 0;
-
+    return 0;
 }
