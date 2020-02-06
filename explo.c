@@ -40,8 +40,17 @@ int main(){
 
     printf("Voulez vous allez a montpellier, toulouse ou paris ?\n");
 
+int main()
+{
+    char reponse[50];
+    char toulouse[50] = ("toulouse");
+    char montpellier[50] = ("montpellier");
+
+    printf("Voulez vous allez a montpellier ou toulouse ?\n");
+
     // scan reponse joueur
     scanf("%s", reponse);
+
 
   while(reponse==0){
 
@@ -60,8 +69,14 @@ int main(){
   }
 
 
+  if (strcmp(reponse,montpellier)==0){
+    printf("Vous allez a montpellier");
+  }
 
-
+  if (strcmp(reponse,toulouse)==0){
+    printf("Vous allez a toulouse");
 }
+
+
     return 0;
 }
