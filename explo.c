@@ -10,6 +10,7 @@ int main()
 
     printf("Voulez vous allez a montpellier ou toulouse ?\n");
 
+    // scan reponse joueur
     scanf("%s", reponse);
 
   if (strcmp(reponse,montpellier)==0){
@@ -19,6 +20,7 @@ int main()
   if (strcmp(reponse,toulouse)==0){
     printf("Vous allez a toulouse");
 }
+ // en cas d erreur
   if (strcmp(reponse,toulouse)!=0){
   printf("Error");
 }
