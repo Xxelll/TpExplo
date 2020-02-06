@@ -11,7 +11,7 @@ int main(){
   printf ("Ou voulez vous aller ?\n (1) Toulouse (2) Montpellier.\n");
   		scanf("%d",&decisionJoueur);
 
-// Decision lieu
+// Decision du lieu par numéro
   if(decisionJoueur == 1){
 			printf("\nVous allez a Toulouse \n");
         }
@@ -19,8 +19,6 @@ int main(){
 		if (decisionJoueur == 2){
 			printf("Vous allez a Montpellier\n");
 		}
-
-
 
 return 0;
 
