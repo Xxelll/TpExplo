@@ -43,20 +43,25 @@ int main(){
     // scan reponse joueur
     scanf("%s", reponse);
 
+  while(reponse==0){
+
   if (strcmp(reponse,montpellier)==0){
-    printf("Vous allez a montpellier");
+    printf("Vous allez a montpellier\n");
+    printf("Vous pouvez vous rendre a toulouse\n");
+
   }
 
   if (strcmp(reponse,toulouse)==0){
-    printf("Vous allez a toulouse");
+    printf("Vous allez a toulouse\n");
   }
 
   if (strcmp(reponse,paris)==0){
-    printf("Vous allez a paris");
+    printf("Vous allez a paris\n");
   }
 
 
 
 
+}
     return 0;
 }
